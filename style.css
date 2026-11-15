@@ -35,7 +35,161 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
-/* I used the colour codes and and AI for whats up there 
+/* I used the colour codes and and AI for whats up there */
+
+nav {
+    min-height: 82px;
+    padding: 18px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #06111d;
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-family: 'Barlow Condense', sans-serif; 
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.2;
+}
+
+.nav-links a:hover {
+    color:var (--green);
+}
+
+/* HOMPAGE HERO */
+
+.home-hero {
+    min-height: 800px;
+    padding: 80px 3% 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(90eg, rgba(3,12,22,0,0.95), rgba(3,12,22,0.48))
+        linear-gradient(0deg,rgba(3,12,22,0.9), transparent 70%)
+        url("https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=2000&q=90");
+
+
+    background-size: cover;
+    background-position: center;
+}
+    
+    
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+
+}
+
+.eyebrow::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: var(--green);
+
+}
+
+.home-hero h1 {
+    font-family: 'Barlow Condensed', impact, sans-serif;
+    font-size: clamp(65px, 10vw, 140px);
+    font-weight: 900;
+    line-height: 0.83;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    max-width: 1000px;
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.hero-description {
+    color: #d0d9e2;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 690px;
+    margin-top: 35px;
+}
+
+.hero-buttons {
+    dislay: flex;
+    gap: 16px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+
+}
+
+.btn-primary,
+.btn-outline {
+    min-height: 60px;
+    padding: 0 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.25;
+
+
+}
+
+.btn-primary {
+    color: var(--dark);
+    background: var(--green);
+    border: 1px solid var(--green);
+
+}
+
+.btn-primary:hover {
+    background: white;
+    border-color: white;
+    transform: translatey(-3px);
+
+}
+
+    
+     
+.gtn-outline {
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(0,0,0,0.2);
+}
+
+.btn
+
+
 
 
 
@@ -52,5 +206,4 @@ button {
 
 
 /*Ethaan Styling*/
-
-
+ 
