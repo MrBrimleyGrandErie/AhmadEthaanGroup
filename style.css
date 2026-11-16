@@ -187,21 +187,94 @@ nav {
     background: rgba(0,0,0,0.2);
 }
 
-.btn
+.btn-outline:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+/* HOMPAGE STATS */
+
+.stats {
+    display: flex;
+    gap:0;
+    margin-top: 75px;
+    max-width: 800px;
+    border-top: 1px solid var(--line);
+    padding-top:25px;
+}
+
+.stat {
+    flex: 1;
+    padding: 0 30px;
+    border-right: 1px solid var(--line);
+}
+
+.stat:first-child {
+    padding-left: 0;
+
+}
+
+.stat:last-child {
+    border-right: none;
+
+}
+
+.stat strong {
+    display: block;
+    font-familly: 'Barlow Condensed', sans-serif;
+    color: var(--green);
+    font-size: 48px;
+    line-height: 1;
+
+}
+
+.stat span {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+}
+
+/* MOVING SPORTS TICKER */
+
+.ticker {
+    overflow: hidden;
+    background: var(--green);
+    color: var(--dark);
+    padding: 17px0;
+    white-space: nowrap;
+ }
+
+ .ticker-track {
+    display: inline-flex;
+    align-items: center;
+    gap:45px;
+    min-width: max-content;
+    animation: tickerMOve 28s linear infinite;
+ }
+
+ .ticker-track span {
+    font-family: 'Barlow Cindensed', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+ }
+
+.ticker-track span::after {
+    content: "◆";
+    margin-left: 45px;
+    font-size:13px;
+}
+/* used AI to make this "◆" */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes tickerMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+/* THIS WAS AI */
 
 
 
