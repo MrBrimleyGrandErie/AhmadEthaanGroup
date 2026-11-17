@@ -465,8 +465,63 @@ nav {
     position: relative;
 }
 
+.sport-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:linear-gradient(90deg, rgba(3,12,22,0.95), rgba(3,12,22,0.25)),
+                linear-gradient(0deg, rgba(3,12,22,0.7), transparent);
+}
+/* Needed help with the linear gradient so i used some help from the web*/
+
+.sport-hero > * {
+    position: relative;
+}
+
+.sport-hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(75px, 12vw, 150px);
+    line-height: 0.85;
+    text-transform: uppercase;
+
+}
+
+.sport-tagline {
+    color: var(--green);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.sport-description {
+    max-width: 800px;
+    color: #d2dce5;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-top: 25px;
+}
+
+/* SPORT SPECIFIC BACKGROUND */
+
+.football-hero {
+    background-image: url("");
+
+}
+
+.hockey-hero {
+    background-image: url("");
+
+}
+
+.volleyball-hero {
+    background-image: url("");
+
+}
 
 
+/* DETAILS AND REGESTRATION*/
 
-/*Ethaan Styling*/
- 
+
+    /*Ethaan Styling*/ 
