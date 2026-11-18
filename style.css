@@ -4,7 +4,7 @@
 /* GENERAL SETTINGS */
 
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -20,6 +20,102 @@ a {
     color: white;
     text-decoration: none;
 }
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #06111d;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b7ff35;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: #b7ff35;
+}
+
+/* HOMEPAGE HERO */
+
+.home-hero {
+    min-height: 550px;
+    padding: 120px 8%;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+}
+
+.eyebrow,
+.small-heading {
+    color: #b7ff35;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.home-hero h1,
+.sport-hero h1 {
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+.green-text {
+    color: #b7ff35;
+}
+
+.hero-description {
+    color: #dddddd;
+    font-size: 18px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary,
+.btn-outline {
+    display: inline-block;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #b7ff35;
+    color: #06111d;
+}
+
+.btn-outline {
+    border: 2px solid white;
+}
+
+.btn-primary:hover,
+.registration-form button:hover {
+    background-color: white;
+}
+
+.btn-outline:hover {
+    background-color: #b7ff35;
+    color: #06111d;
+}
+
+
+
 
  
  
