@@ -114,6 +114,91 @@ header {
     color: #06111d;
 }
 
+/* STATISTICS */
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 8%;
+    background-color: #0b1d2b;
+    text-align: center;
+}
+
+.stat h2 {
+    color: #b7ff35;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #cccccc;
+}
+
+/* SPORTS TICKER */
+
+.ticker {
+    background-color: #b7ff35;
+    color: #06111d;
+    padding: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* SPORTS SECTION */
+
+.sports-section {
+    padding: 70px 8%;
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-top h2,
+.about-section h2 {
+    font-size: 40px;
+}
+
+.section-top p {
+    color: #b7ff35;
+}
+ 
+/* SPORTS GRID */
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sport-tile {
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.tile-content {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    width: 100%;
+}
+
+.tile-number,
+.tile-arrow {
+    color: #b7ff35;
+    font-weight: bold;
+}
+
+.tile-content h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
 
 
 
