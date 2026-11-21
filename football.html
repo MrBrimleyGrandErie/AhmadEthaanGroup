@@ -73,5 +73,77 @@
             </div>
 
         </div>
+<!-- REGISTRATION FORM -->
+        <div class="registration-area">
+
+            <div class="eyebrow">REGISTRATION</div>
+
+            <h2>REGISTER NOW.</h2>
+
+            <p>Fill out the form below to join our soccer league.</p>
+
+            <form class="registration-form" onsubmit="register(event)">
+
+                <div class="form-field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName"
+                    placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName"
+                    placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="age">Age</label>
+                    <input type="number" id="age"
+                    min="8" max="18" placeholder="Enter your age" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="experience">Experience Level</label>
+
+                    <select id="experience" required>
+                        <option value="">Choose your level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                    placeholder="Enter your email" required>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Submit Registration
+                </button>
+
+            </form>
+
+            <!-- CONFIRMATION MESSAGE -->
+            <div id="confirmation" style="display: none;">
+                <h3>Registration Successful!</h3>
+                <p>
+                    Thank you for registering with APEX Sports League.
+                    We look forward to seeing you on the field! Or not.....
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>@  APEX SPORTS LEAGUE.</p>
+        <a href="homepageindex.html">Back to Home</a>
+    </footer>
+</body>
+</html>
 
      
