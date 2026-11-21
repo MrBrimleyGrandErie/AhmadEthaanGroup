@@ -201,6 +201,179 @@ header {
 
 
 
+/* ABOUT SECTION */
+
+.about-section {
+    background-color: #0b1d2b;
+    padding: 70px 8%;
+}
+
+.about-section p {
+    color: #cccccc;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+.about-list {
+    color: #b7ff35;
+    line-height: 2;
+}
+
+/* REGISTRATION PAGE */
+
+.registration-layout {
+    display: flex;
+    gap: 50px;
+    padding: 70px 8%;
+    align-items: flex-start;
+}
+
+.league-details,
+.registration-area {
+    flex: 1;
+}
+
+.registration-area {
+    background-color: #0b1d2b;
+    padding: 30px;
+}
+
+.league-details h2,
+.registration-area h2 {
+    font-size: 30px;
+}
+
+.league-details p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+/* SPORT DETAILS */
+
+.detail-item {
+    border-bottom: 1px solid #344454;
+    padding: 15px 0;
+}
+
+.detail-item h3 {
+    color: #b7ff35;
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    margin-top: 5px;
+}
+
+/* REGISTRATION FORM */
+
+.registration-form,
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-field {
+    gap: 8px;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field select {
+    padding: 13px;
+    background-color: #06111d;
+    border: 1px solid #344454;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+.registration-form button {
+    background-color: #b7ff35;
+    color: #06111d;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ 
+
+/* FOOTER */
+
+footer {
+    background-color: #030a11;
+    text-align: center;
+    padding: 30px;
+    color: #aaaaaa;
+}
+ 
+/* HOMEPAGE IMAGE */
+.home-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.home-hero > *:not(img) {
+    position: relative;
+    z-index: 1;
+}
+
+/* SPORTS IMAGES */
+.sport-tile {
+    position: relative;
+    overflow: hidden;
+}
+
+.sport-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.sport-tile > *:not(img) {
+    position: relative;
+    z-index: 1;
+}
+/* THIS FIXED THE HUGE BASKETBALL IMAGE. i did need help from AI cuz i had no idea HOW to do it */
+.basketball-tile {
+    position: relative;
+    overflow: hidden;
+}
+
+.basketball-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.basketball-tile > *:not(img) {
+    position: relative;
+    z-index: 1;
+}
+
 
  
  
