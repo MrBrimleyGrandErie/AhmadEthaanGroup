@@ -1,13 +1,15 @@
 /*Write your code below your name's comment. DO NOT EDIT OTHER PEOPLES WORK!!!*/
 /*Ahmad Styling*/
- 
+
 /* GENERAL SETTINGS */
 
 
+/* This makes sure the size of things stays correct */
 *{
     box-sizing: border-box;
 }
 
+/* This sets the background colour, text colour and font for the website */
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +18,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* This changes the links so they dont have underlines */
 a {
     color: white;
     text-decoration: none;
@@ -23,6 +26,7 @@ a {
 
 /* NAVIGATION BAR */
 
+/* This styles the top part of the website */
 header {
     background-color: #06111d;
     padding: 20px 8%;
@@ -31,23 +35,27 @@ header {
     align-items: center;
 }
 
+/* This changes the colour and size of the logo */
 .logo {
     color: #b7ff35;
     font-size: 28px;
     font-weight: bold;
 }
 
+/* This puts the navigation links beside each other */
 .nav-links {
     display: flex;
     gap: 30px;
 }
 
+/* This changes the link colour when someone puts there mouse over it */
 .nav-links a:hover {
     color: #b7ff35;
 }
 
 /* HOMEPAGE HERO */
 
+/* This styles the main section at the top of the homepage */
 .home-hero {
     min-height: 550px;
     padding: 120px 8%;
@@ -56,6 +64,7 @@ header {
     background-position: center;
 }
 
+/* This changes the colour and spacing of the small headings */
 .eyebrow,
 .small-heading {
     color: #b7ff35;
@@ -63,16 +72,19 @@ header {
     letter-spacing: 3px;
 }
 
+/* This changes the size of the main headings */
 .home-hero h1,
 .sport-hero h1 {
     font-size: 65px;
     margin: 15px 0;
 }
 
+/* This makes certain words green */
 .green-text {
     color: #b7ff35;
 }
 
+/* This changes the description under the main heading */
 .hero-description {
     color: #dddddd;
     font-size: 18px;
@@ -82,12 +94,14 @@ header {
 
 /* BUTTONS */
 
+/* This puts the buttons beside each other and adds space above them */
 .hero-buttons {
     margin-top: 30px;
     display: flex;
     gap: 15px;
 }
 
+/* This gives both buttons there size and makes the text bold */
 .btn-primary,
 .btn-outline {
     display: inline-block;
@@ -95,20 +109,24 @@ header {
     font-weight: bold;
 }
 
+/* This styles the main button with a green background */
 .btn-primary {
     background-color: #b7ff35;
     color: #06111d;
 }
 
+/* This gives the second button a white border */
 .btn-outline {
     border: 2px solid white;
 }
 
+/* This changes the button background when the mouse goes over it */
 .btn-primary:hover,
 .registration-form button:hover {
     background-color: white;
 }
 
+/* This changes the second button when the mouse goes over it */
 .btn-outline:hover {
     background-color: #b7ff35;
     color: #06111d;
@@ -116,6 +134,7 @@ header {
 
 /* STATISTICS */
 
+/* This puts the statistics in a row and gives them a background */
 .stats {
     display: flex;
     justify-content: space-around;
@@ -124,18 +143,21 @@ header {
     text-align: center;
 }
 
+/* This changes the colour and size of the numbers */
 .stat h2 {
     color: #b7ff35;
     font-size: 35px;
     margin-bottom: 5px;
 }
 
+/* This changes the colour of the text under the numbers */
 .stat p {
     color: #cccccc;
 }
 
 /* SPORTS TICKER */
 
+/* This styles the banner that shows the different sports */
 .ticker {
     background-color: #b7ff35;
     color: #06111d;
@@ -146,10 +168,12 @@ header {
 
 /* SPORTS SECTION */
 
+/* This adds space around the section where the sports are shown */
 .sports-section {
     padding: 70px 8%;
 }
 
+/* This puts the heading and description on the same row */
 .section-top {
     display: flex;
     justify-content: space-between;
@@ -157,23 +181,27 @@ header {
     margin-bottom: 30px;
 }
 
+/* This changes the size of the section headings */
 .section-top h2,
 .about-section h2 {
     font-size: 40px;
 }
 
+/* This makes the description green */
 .section-top p {
     color: #b7ff35;
 }
  
 /* SPORTS GRID */
 
+/* This puts the sport cards into 3 columns with space between them */
 .sports-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
+/* This sets the size of each sport card and puts the content at the bottom */
 .sport-tile {
     height: 280px;
     display: flex;
@@ -182,18 +210,21 @@ header {
     background-position: center;
 }
 
+/* This adds a dark background behind the text so its easier to read */
 .tile-content {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 20px;
     width: 100%;
 }
 
+/* This changes the colour and makes the numbers and arrows bold */
 .tile-number,
 .tile-arrow {
     color: #b7ff35;
     font-weight: bold;
 }
 
+/* This changes the size of the sport names */
 .tile-content h3 {
     font-size: 28px;
     margin-bottom: 5px;
@@ -203,17 +234,20 @@ header {
 
 /* ABOUT SECTION */
 
+/* This gives the about section a darker background and adds space */
 .about-section {
     background-color: #0b1d2b;
     padding: 70px 8%;
 }
 
+/* This changes the paragraph colour and spacing */
 .about-section p {
     color: #cccccc;
     line-height: 1.7;
     max-width: 750px;
 }
 
+/* This changes the colour and spacing of the list */
 .about-list {
     color: #b7ff35;
     line-height: 2;
@@ -221,6 +255,7 @@ header {
 
 /* REGISTRATION PAGE */
 
+/* This puts the league information and registration form beside each other */
 .registration-layout {
     display: flex;
     gap: 50px;
@@ -228,21 +263,25 @@ header {
     align-items: flex-start;
 }
 
+/* This gives both sections the same amount of space */
 .league-details,
 .registration-area {
     flex: 1;
 }
 
+/* This adds a dark background and space around the registration form */
 .registration-area {
     background-color: #0b1d2b;
     padding: 30px;
 }
 
+/* This changes the size of the headings in both sections */
 .league-details h2,
 .registration-area h2 {
     font-size: 30px;
 }
 
+/* This changes the paragraph colour and spacing */
 .league-details p {
     color: #cccccc;
     line-height: 1.7;
@@ -250,22 +289,26 @@ header {
 
 /* SPORT DETAILS */
 
+/* This adds a line under each detail and gives it some space */
 .detail-item {
     border-bottom: 1px solid #344454;
     padding: 15px 0;
 }
 
+/* This makes the detail headings green */
 .detail-item h3 {
     color: #b7ff35;
     margin-bottom: 5px;
 }
 
+/* This adds some space above the detail paragraphs */
 .detail-item p {
     margin-top: 5px;
 }
 
 /* REGISTRATION FORM */
 
+/* This puts the form items in a column instead of a row */
 .registration-form,
 .form-field {
     display: flex;
@@ -273,14 +316,17 @@ header {
     gap: 15px;
 }
 
+/* This controls the space between the form label and the input */
 .form-field {
     gap: 8px;
 }
 
+/* This makes the labels bold */
 .form-field label {
     font-weight: bold;
 }
 
+/* This styles the boxes where users enter there information */
 .form-field input,
 .form-field select {
     padding: 13px;
@@ -291,6 +337,7 @@ header {
     width: 100%;
 }
 
+/* This styles the registration button */
 .registration-form button {
     background-color: #b7ff35;
     color: #06111d;
@@ -305,6 +352,7 @@ header {
 
 /* FOOTER */
 
+/* This styles the bottom part of the website */
 footer {
     background-color: #030a11;
     text-align: center;
@@ -313,11 +361,14 @@ footer {
 }
  
 /* HOMEPAGE IMAGE */
+
+/* This allows the image to fit inside the main homepage section */
 .home-hero {
     position: relative;
     overflow: hidden;
 }
 
+/* This makes the homepage image cover the whole section */
 .home-hero > img {
     position: absolute;
     width: 100%;
@@ -328,17 +379,21 @@ footer {
     z-index: 0;
 }
 
+/* This keeps the text and buttons in front of the image */
 .home-hero > *:not(img) {
     position: relative;
     z-index: 1;
 }
 
 /* SPORTS IMAGES */
+
+/* This makes sure the sport images stay inside there cards */
 .sport-tile {
     position: relative;
     overflow: hidden;
 }
 
+/* This makes the sport images fill the whole card */
 .sport-tile img {
     width: 100%;
     height: 100%;
@@ -349,10 +404,14 @@ footer {
     z-index: 0;
 }
 
+/* This keeps the sport names and text in front of the images */
 .sport-tile > *:not(img) {
     position: relative;
     z-index: 1;
 }
+
+ 
+
 /* THIS FIXED THE HUGE BASKETBALL IMAGE. i did need help from AI cuz i had no idea HOW to do it */
 .basketball-tile {
     position: relative;

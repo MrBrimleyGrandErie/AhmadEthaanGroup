@@ -1,19 +1,25 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is the basic setup for the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX Soccer League</title>
+
+    <!-- This connects the HTML page to the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
+    <!-- This is the navigation bar that lets users go to other pages -->
     <nav>
         <div class="logo">APEX<span>.</span></div>
 
+        <!-- These are the links to the other pages -->
         <div class="nav-links">
             <a href="homepageindex.html">Home</a>
             <a href="hockey.html">Hockey</a>
@@ -22,13 +28,19 @@
     </nav>
 
     <!-- SOCCER HERO -->
+    <!-- This is the main section at the top of the soccer page -->
     <header class="sport-hero football-hero">
+
+        <!-- This is a small heading showing the league name -->
         <div class="eyebrow">APEX SPORTS LEAGUE</div>
 
+        <!-- This is the main title of the page -->
         <h1>SOCCER</h1>
 
+        <!-- This is a smaller heading under the main title -->
         <h2>ONE PITCH. 22 PLAYERS.</h2>
 
+        <!-- This gives users a short description about the soccer league -->
         <p>
             Bring your skills, compete with others and become
             part of the APEX Soccer League.
@@ -36,15 +48,19 @@
     </header>
 
     <!-- REGISTRATION SECTION -->
+    <!-- This section holds the league information and registration form -->
     <section class="registration-layout">
 
         <!-- LEAGUE INFORMATION -->
+        <!-- This side shows information about the soccer league -->
         <div class="league-details">
 
             <div class="eyebrow">JOIN THE LEAGUE</div>
 
+            <!-- This is the main heading for the information section -->
             <h2>YOUR NEXT<br>CHALLENGE<br>STARTS HERE.</h2>
 
+            <!-- This explains what players can expect from the league -->
             <p>
                 Join APEX Soccer League and develop your skills
                 while competing with other players.
@@ -52,56 +68,69 @@
                 player, there is a place for you.
             </p>
 
+            <!-- This shows the age group allowed to join -->
             <div class="detail-item">
                 <div class="small-heading">AGE GROUP</div>
                 <p>8 - 18 Years Old</p>
             </div>
 
+            <!-- This tells users what day the games happen -->
             <div class="detail-item">
                 <div class="small-heading">GAME DAY</div>
                 <p>Saturdays</p>
             </div>
 
+            <!-- This shows where the games take place -->
             <div class="detail-item">
                 <div class="small-heading">LOCATION</div>
                 <p>PDHS APEX FIELDS</p>
             </div>
 
+            <!-- This tells users when the season starts -->
             <div class="detail-item">
                 <div class="small-heading">SEASON</div>
                 <p>Spring 2027</p>
             </div>
 
         </div>
+
 <!-- REGISTRATION FORM -->
+        <!-- This is where users enter there information to register -->
         <div class="registration-area">
 
             <div class="eyebrow">REGISTRATION</div>
 
+            <!-- This is the title above the registration form -->
             <h2>REGISTER NOW.</h2>
 
+            <!-- This tells users what to do before filling out the form -->
             <p>Fill out the form below to join our soccer league.</p>
 
+            <!-- This form collects the players information and runs a function when submitted -->
             <form class="registration-form" onsubmit="register(event)">
 
+                <!-- This input box is for the players first name -->
                 <div class="form-field">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName"
                     placeholder="Enter your first name" required>
                 </div>
 
+                <!-- This input box is for the players last name -->
                 <div class="form-field">
                     <label for="lastName">Last Name</label>
                     <input type="text" id="lastName"
                     placeholder="Enter your last name" required>
                 </div>
 
+                <!-- This input box lets users enter there age -->
                 <div class="form-field">
                     <label for="age">Age</label>
                     <input type="number" id="age"
                     min="8" max="18" placeholder="Enter your age" required>
                 </div>
 
+                <!-- This lets users choose there experience level -->
                 <div class="form-field">
                     <label for="experience">Experience Level</label>
 
@@ -113,12 +142,14 @@
                     </select>
                 </div>
 
+                <!-- This input box is for the players email address -->
                 <div class="form-field">
                     <label for="email">Email Address</label>
                     <input type="email" id="email"
                     placeholder="Enter your email" required>
                 </div>
 
+                <!-- This button submits the registration form -->
                 <button type="submit" class="btn-primary">
                     Submit Registration
                 </button>
@@ -126,6 +157,7 @@
             </form>
 
             <!-- CONFIRMATION MESSAGE -->
+            <!-- This message is hidden until the form is submitted -->
             <div id="confirmation" style="display: none;">
                 <h3>Registration Successful!</h3>
                 <p>
@@ -139,6 +171,7 @@
     </section>
 
     <!-- FOOTER -->
+    <!-- This is the bottom of the webpage with the league name and home link -->
     <footer>
         <p>@  APEX SPORTS LEAGUE.</p>
         <a href="homepageindex.html">Back to Home</a>

@@ -2,37 +2,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is the basic setup for the website -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX SPORTS LEAGUE</title>
+
+    <!-- This connects the HTML page to the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- This is the navigation bar at the top of the page -->
     <nav>
         <div class="logo"> APEX<span>.</span></div>
+
+        <!-- These links lets users go to different pages -->
         <div class="nav-links">
             <a href="homepageindex.html">Home</a>
             <a href="about us ">About us</a>
         </div>
     </nav>
 
+    <!-- This is the main section that users see first -->
     <header class="home-hero">
 
+        <!-- This adds the main background image for the homepage -->
         <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2" alt="Soccer stadium">
 
+        <!-- This tells users that registration is open -->
         <div class="eyebrow">Registration is open for 2026/27</div>
 
+        <!-- This is the main title of the website -->
         <h1>
             YOUR GAME.<br>
             <span class="green-text"> YOUR MOMENT.</span>
         </h1>
 
+        <!-- This gives a short description about the league -->
         <p class="hero-description">
             Six sports. One league built for different competetive sports.
             Choose your game!
         </p>
 
+        <!-- These are buttons that take users to other parts of the page -->
         <div class="hero-buttons">
             <a href="#sports" class="btn-primary">
                 Explore Sports <span></span>
@@ -43,6 +55,7 @@
             </a>
         </div>
 
+        <!-- This section shows some quick information about the league -->
         <div class="stats">
             <div class="stat>">
                 <p><strong>06</strong></p>
@@ -61,7 +74,7 @@
         </div>
     </header>
 
-    <!-- Moving sports name banner-->
+    <!-- This is a moving banner that shows the different sports -->
     <div class="ticker">
         <div class="ticker-track">
             <span>Soccer</span>
@@ -79,8 +92,10 @@
         </div>
     </div>
 
-    <!--Sports selection-->
+    <!-- This section shows the sports that people can choose from -->
     <section class="sports-selection" id="sports">
+
+        <!-- This is the heading and small description for this section -->
         <div class="section-top">
             <div>
                 <div class="eyebrow"> Find your competition</div>
@@ -93,7 +108,10 @@
             </p>
         </div>
 
+        <!-- This grid holds all the different sports and there images -->
         <div class="sport-grid">
+
+            <!-- This is the soccer card and it takes users to the football page -->
             <a href="football.html" class="sport-tile">
                 <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20" alt="Soccer players all around the ball in a big stadium filled with people">
                 <span class="tile-number">01</span>
@@ -104,6 +122,7 @@
                 <span class="tile-arrow"></span>
             </a>
 
+            <!-- This card shows American football and its description -->
             <div class="sport-tile canadian tile">
                 <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390" alt="American football on a green field">
                 <span class="tile-number">02</span>
@@ -114,6 +133,7 @@
                 <span class="tile-arrow"></span>
             </div>
 
+            <!-- This card shows basketball and its image -->
             <div class="Sport-tile basketball-tile">
                 <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="Basketball that was shot and swished inside the net">
                 <span class="tile-number">03</span>
@@ -124,6 +144,7 @@
                 <span class="tile-arrow"></span>
             </div>
 
+            <!-- This is the volleyball card and it takes users to the volleyball page -->
             <a href="volleyball.html" class="sport-tile volleyball-tile">
                 <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1" alt="Volleyball outside hitter spiking the ball over the net">
                 <span class="tile-number">06</span>
@@ -137,18 +158,24 @@
         </div>
     </section>
 
-    <!--ABout section-->
+    <!-- This section explains more about the APEX sports league -->
     <section class="about-section" id="about">
         <div>
+            <!-- This is a small title above the main heading -->
             <div class="eyebrow">More then a game</div>
+
+            <!-- This is the main heading for the about section -->
             <h2>BUILT FOR<br>THE NEXT<br>GENERATION.</h2>
+
+            <!-- This paragraph explains what the league is about -->
             <p>
                 APEX Sports League brings players together through competition,
                 teamwork and a shared "love of the game" feeling.Find your
-                sport and make your moment count!
+                sport and make your moment count! 
             </p>
         </div>
 
+        <!-- This list shows some of the benefits of joining the league -->
         <ul class="about-list">
             <li> develop your athletic skills</li>
             <li>Build teamwork and confidence</li>
@@ -157,13 +184,17 @@
         </ul>
     </section>
 
+    <!-- This is the bottom part of the website -->
     <footer>
-        <p> 2026 APEX SPORTS LEAGUE</p>
+        <p>  APEX SPORTS LEAGUE</p>
     </footer>
 
+    <!-- This JavaScript message shows in the browser console when the page loads -->
     <script>
         console.log("APEX Sports League homepage loaded");
     </script>
 
 </body>
 </html>
+
+ 
