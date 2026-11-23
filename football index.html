@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX American Football League</title>
+    <!-- Note: I used AI to find the exact shade of color for this theme -->
+    
+    <style>
+        /* GENERAL SETTINGS */
+
+        /* Resets box spasing */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sets page background */
+        /* Issue: Uses fixed padding-bottom instead of auto margins */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0b1325;
+            color: #ffffff;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* NAVIGATION BAR */
+
+        /* Styles top bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #141e33;
+            padding: 20px 40px;
+            border-bottom: 2px solid #ff4500;
+        }
+
+        /* Highlights logo text */
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        /* Colors dot icon */
+        .logo span {
+            color: #ff4500;
+        }
+
+        /* Styles link buttons */
+        .nav-links a {
+            color: #cbd5e0;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Adds hover effect */
+        .nav-links a:hover {
+            color: #ff4500;
+        }
+
+        /* HERO SECTION */
+
+        /* Creates hero gradient */
+        .sport-hero {
+            background: linear-gradient(180deg, #141e33 0%, #0b1325 100%);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #1e2d4a;
+        }
+
+        /* Capitalizes small titles */
+        .eyebrow {
+            color: #ff4500;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* Styles main heading */
+        .sport-hero h1 {
+            font-size: 56px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        /* Styles sub heading */
+        .sport-hero h2 {
+            font-size: 22px;
+            color: #a0aec0;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* Sets text width */
+        .sport-hero p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #cbd5e0;
+            font-size: 16px;
+        }
+
+        /* REGISTRATION PAGE LAYOUT */
+
+        /* Creates colum grid */
+        /* Issue: Strict two-column split causes horizontal crowding on medium screens */
+        .registration-layout {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* LEAGUE DETAILS */
+
+        /* Styles left card */
+        .league-details {
+            background-color: #141e33;
+            padding: 35px;
+            border-radius: 10px;
+            border: 1px solid #1e2d4a;
+        }
+
+        /* Sets title size */
+        .league-details h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin: 15px 0 20px 0;
+        }
+
+        /* Adds paragraph spacing */
+        .league-details p {
+            color: #cbd5e0;
+            margin-bottom: 30px;
+        }
+
+        /* SPORT DETAILS */
+
+        /* Separates detail lines */
+        .detail-item {
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #1e2d4a;
+        }
+
+        /* Removes last borer */
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Styles detail label */
+        .small-heading {
+            font-size: 12px;
+            font-weight: bold;
+            color: #ff4500;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+
+        /* Emphasizes detail value */
+        .detail-item p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 0;
+        }
+
+        /* REGISTRATION AREA */
+
+        /* Styles right card */
+        .registration-area {
+            background-color: #141e33;
+            padding: 35px;
+            border-radius: 10px;
+            border: 1px solid #1e2d4a;
+        }
+
+        /* Styles section title */
+        .registration-area h2 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        /* Adds form description */
+        .registration-area p {
+            color: #cbd5e0;
+            margin-bottom: 25px;
+        }
+
+        /* REGISTRATION FORM */
+
+        /* Stacks form elements */
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Groups input feilds */
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        /* Styles field labels */
+        .form-field label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #cbd5e0;
+        }
+
+        /* Styles input boxes */
+        .form-field input, 
+        .form-field select {
+            width: 100%;
+            padding: 12px;
+            background-color: #0b1325;
+            border: 1px solid #2d3748;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        /* Changes focus border */
+        .form-field input:focus, 
+        .form-field select:focus {
+            border-color: #ff4500;
+        }
+
+        /* BUTTONS */
+
+        /* Styles submit button */
+        .btn-primary {
+            background-color: #ff4500;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Darkens button hover */
+        .btn-primary:hover {
+            background-color: #e03e00;
+        }
+
+        /* CONFIRMATION BOX */
+
+        /* Styles confrimation box */
+        #confirmation {
+            margin-top: 20px;
+            background-color: #0b1325;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #ff4500;
+        }
+
+        /* Colors confirmation title */
+        #confirmation h3 {
+            color: #ff4500;
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
+
+        /* Centers footer content */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #1e2d4a;
+            color: #a0aec0;
+        }
+
+        /* Styles footer link */
+        footer a {
+            color: #ff4500;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        /* Underlines footer link */
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTBALL IMAGE CONTROL */
+
+        /* i used AI for this to make sure the american football picture scaled right and didnt overflow the tile */
+        .american-football-tile {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .american-football-tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .american-football-tile > *:not(img) {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* MEDIA QUERIES */
+
+        /* Makes layout mobile-ready */
+        @media (max-width: 768px) {
+            .registration-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">APEX<span>.</span></div>
+
+        <div class="nav-links">
+            <a href="homepageindex.html">Home</a>
+            <a href="hockey.html">Hockey</a>
+            <a href="volleyball.html">Volleyball</a>
+        </div>
+    </nav>
+
+    <header class="sport-hero american-football-hero">
+        <div class="eyebrow">APEX SPORTS LEAGUE</div>
+
+        <h1>FOOTBALL</h1>
+
+        <h2>ONE FIELD. 22 PLAYERS.</h2>
+
+        <p>
+            Bring your skills, compete with others and become
+            part of the APEX American Football League.
+        </p>
+    </header>
+
+    <section class="registration-layout">
+
+        <div class="league-details">
+
+            <div class="eyebrow">JOIN THE LEAGUE</div>
+
+            <h2>YOUR NEXT<br>CHALLENGE<br>STARTS HERE.</h2>
+
+            <p>
+                Join APEX American Football League and develop your skills
+                while competing with other players.
+                Whether you are a beginner or an experienced
+                player, there is a place for you.
+            </p>
+
+            <div class="detail-item">
+                <div class="small-heading">AGE GROUP</div>
+                <p>8 - 18 Years Old</p>
+            </div>
+
+            <div class="detail-item">
+                <div class="small-heading">GAME DAY</div>
+                <p>Saturdays</p>
+            </div>
+
+            <div class="detail-item">
+                <div class="small-heading">LOCATION</div>
+                <p>PDHS APEX FIELD</p>
+            </div>
+
+            <div class="detail-item">
+                <div class="small-heading">SEASON</div>
+                <p>Fall 2027</p>
+            </div>
+
+        </div>
+
+        <div class="registration-area">
+
+            <div class="eyebrow">REGISTRATION</div>
+
+            <h2>REGISTER NOW.</h2>
+
+            <p>Fill out the form below to join our american football league.</p>
+
+            <!-- Issue: Form calls missing register JavaScript function -->
+            <form class="registration-form" onsubmit="register(event)">
+
+                <div class="form-field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName"
+                    placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName"
+                    placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="age">Age</label>
+                    <input type="number" id="age"
+                    min="8" max="18" placeholder="Enter your age" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="experience">Experience Level</label>
+
+                    <select id="experience" required>
+                        <option value="">Choose your level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                    placeholder="Enter your email" required>
+                </div>
+
+                <button type="submit

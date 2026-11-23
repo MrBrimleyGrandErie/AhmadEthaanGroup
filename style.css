@@ -454,33 +454,169 @@ footer {
 
 
     /*Ethaan Styling*/ <head>
-/this is the basketball page  
-</head> charset="UTF-8">
-<meta name ="viewport" content="width=device-width, initial-scale=2.0">
-<title> Apex Sports Rep League - Basketball</title>
+<---this is for both of my two pages ( the football and basketball ones - i just took it from the code and added explaining comments to stuff )
+/* GENERAL SETTINGS */
 
-  
-<style> 
- {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+/* Resets box spasing */
+* {
+    box-sizing: border-box;
 }
-</style>
 
+/* Sets page background */
+/* Issue: Uses fixed padding-bottom instead of auto margins */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b1325;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
 
-<body>
-background-color: #071828; /* Midnight Navy background */
-color: #f2f0e9; /* Cream tdext */
-font-family: system-ui, -apple-system, sans-serif;
-line-height: 1.6;
-padding: 20px; 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
+/* NAVIGATION BAR */
 
-.container
-max-width: 900px;
-margen: 0 auto;
+/* Styles top bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141e33;
+    padding: 20px 40px;
+    border-bottom: 2px solid #ff4500;
+}
 
-header {
-	display: flex;
+/* Highlights logo text */
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* Colors dot icon */
+.logo span {
+    color: #ff4500;
+}
+
+/* Styles link buttons */
+.nav-links a {
+    color: #cbd5e0;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Adds hover effect */
+.nav-links a:hover {
+    color: #ff4500;
+}
+
+/* HERO SECTION */
+
+/* Creates hero gradient */
+.sport-hero {
+    background: linear-gradient(180deg, #141e33 0%, #0b1325 100%);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #1e2d4a;
+}
+
+/* Capitalizes small titles */
+.eyebrow {
+    color: #ff4500;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Styles main heading */
+.sport-hero h1 {
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Styles sub heading */
+.sport-hero h2 {
+    font-size: 22px;
+    color: #a0aec0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Sets text width */
+.sport-hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #cbd5e0;
+    font-size: 16px;
+}
+
+/* REGISTRATION PAGE LAYOUT */
+
+/* Creates colum grid */
+/* Issue: Strict two-column split causes horizontal crowding on medium screens */
+.registration-layout {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* LEAGUE DETAILS */
+
+/* Styles left card */
+.league-details {
+    background-color: #141e33;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #1e2d4a;
+}
+
+/* Sets title size */
+.league-details h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 15px 0 20px 0;
+}
+
+/* Adds paragraph spacing */
+.league-details p {
+    color: #cbd5e0;
+    margin-bottom: 30px;
+}
+
+/* SPORT DETAILS */
+
+/* Separates detail lines */
+.detail-item {
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1e2d4a;
+}
+
+/* Removes last borer */
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+/* Styles detail label */
+.small-heading {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff4500;
+    letter-spacing: 1px;
 
